@@ -11,12 +11,12 @@ I found this useful for things like:
 
 Simple example:
 ```go
-	consulAddress := "localhost:8500"
-	consulPrefix := "config/GoTest/app"
+consulAddress := "localhost:8500"
+consulPrefix := "config/GoTest/app"
 
-	appProps := goconsulprops.NewProperties(consulAddress, consulPrefix)
+appProps := goconsulprops.NewProperties(consulAddress, consulPrefix)
 
-    fmt.Printf("app consumerCount = %v, (version:%v)\n", appProps.GetValue("consumerCount"), appProps.GetVersion("consumerCount"))
+fmt.Printf("app consumerCount = %v, (version:%v)\n", appProps.GetValue("consumerCount"), appProps.GetVersion("consumerCount"))
 ```
 
 Output:
